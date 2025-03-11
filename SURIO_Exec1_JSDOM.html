@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Favorite Food</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+    button {
+      background-color: #ff6f61;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff4c3b;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Favorite Food</h1>
+  <button>Enter your favorite food</button>
+
+  <script>
+    const button = document.querySelector("button");
+
+    button.addEventListener("click", function() {
+      const food = prompt("Enter your favorite food");
+      button.textContent = food ? "My Favorite Food is: " + food : "Oops! Try again.";
+    });
+  </script>
+</body>
+</html>
